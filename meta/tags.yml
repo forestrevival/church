@@ -7,4 +7,5 @@ tags:
     name: Record
   - slug: news
     name: News
-
+  - slug: quote
+    name: Quote
