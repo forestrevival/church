@@ -7,8 +7,6 @@ import Layout from "./Layout";
 import BasicMeta from "./meta/BasicMeta";
 import JsonLdMeta from "./meta/JsonLdMeta";
 import OpenGraphMeta from "./meta/OpenGraphMeta";
-import TwitterCardMeta from "./meta/TwitterCardMeta";
-import { SocialList } from "./SocialList";
 import TagButton from "./TagButton";
 import { getAuthor } from "../lib/authors";
 import { getTag } from "../lib/tags";
@@ -39,11 +37,6 @@ export default function PostLayout({
         url={`/posts/${slug}`}
         title={title}
         keywords={keywords}
-        description={description}
-      />
-      <TwitterCardMeta
-        url={`/posts/${slug}`}
-        title={title}
         description={description}
       />
       <OpenGraphMeta
@@ -82,9 +75,6 @@ export default function PostLayout({
           </ul>
         </article>
         <footer>
-          <div className={"social-list"}>
-            <SocialList />
-          </div>
           <Copyright />
         </footer>
       </div>
