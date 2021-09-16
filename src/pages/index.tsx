@@ -1,10 +1,14 @@
 import Layout from "../components/Layout";
 import BasicMeta from "../components/meta/BasicMeta";
 import OpenGraphMeta from "../components/meta/OpenGraphMeta";
+import Head from "next/head";
 
 export default function Index() {
   return (
     <Layout>
+      <Head>
+        <script type="text/javascript" src="https://identity.netlify.com/v1/netlify-identity-widget.js"></script>
+      </Head>
       <BasicMeta url={"/"} />
       <OpenGraphMeta url={"/"} />
       <div className="container">
@@ -12,7 +16,7 @@ export default function Index() {
           <h1>
             Forest Revival Church
           </h1>
-          <h2>A church.</h2>
+          <h2>Welcome to our new church site.</h2>
         </div>
       </div>
       <style jsx>{`
