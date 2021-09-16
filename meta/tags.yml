@@ -5,4 +5,6 @@ tags:
     name: Scold
   - slug: record
     name: Record
+  - slug: news
+    name: News
 
